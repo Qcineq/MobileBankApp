@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5E8874352B725EB7001146FE /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8874342B725EB7001146FE /* OnboardingContainerViewController.swift */; };
 		5E8874372B726AF0001146FE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8874362B726AF0001146FE /* OnboardingViewController.swift */; };
+		5E8874392B743982001146FE /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8874382B743982001146FE /* DummyViewController.swift */; };
+		5E88743C2B743F59001146FE /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E88743B2B743F59001146FE /* LocalState.swift */; };
 		5EE3E0292B62FE9A003F8DB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3E0282B62FE9A003F8DB0 /* AppDelegate.swift */; };
 		5EE3E02D2B62FE9A003F8DB0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3E02C2B62FE9A003F8DB0 /* LoginViewController.swift */; };
 		5EE3E0322B62FE9B003F8DB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE3E0312B62FE9B003F8DB0 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		5E8874342B725EB7001146FE /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		5E8874362B726AF0001146FE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		5E8874382B743982001146FE /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
+		5E88743B2B743F59001146FE /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		5EE3E0252B62FE9A003F8DB0 /* MobileBankApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileBankApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EE3E0282B62FE9A003F8DB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EE3E02C2B62FE9A003F8DB0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +52,14 @@
 			name = Onboarding;
 			sourceTree = "<group>";
 		};
+		5E88743A2B743F43001146FE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5E88743B2B743F59001146FE /* LocalState.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		5EE3E01C2B62FE9A003F8DB0 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				5EE3E0282B62FE9A003F8DB0 /* AppDelegate.swift */,
+				5E88743A2B743F43001146FE /* Utils */,
 				5E8874332B725E5E001146FE /* Onboarding */,
 				5EE3E03D2B6303B5003F8DB0 /* Login */,
 				5EE3E03C2B63036A003F8DB0 /* Files */,
@@ -88,8 +101,9 @@
 		5EE3E03D2B6303B5003F8DB0 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				5EE3E02C2B62FE9A003F8DB0 /* LoginViewController.swift */,
 				5EE3E03E2B6303E1003F8DB0 /* LoginView.swift */,
+				5EE3E02C2B62FE9A003F8DB0 /* LoginViewController.swift */,
+				5E8874382B743982001146FE /* DummyViewController.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -165,6 +179,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EE3E03F2B6303E1003F8DB0 /* LoginView.swift in Sources */,
+				5E88743C2B743F59001146FE /* LocalState.swift in Sources */,
+				5E8874392B743982001146FE /* DummyViewController.swift in Sources */,
 				5EE3E02D2B62FE9A003F8DB0 /* LoginViewController.swift in Sources */,
 				5E8874372B726AF0001146FE /* OnboardingViewController.swift in Sources */,
 				5E8874352B725EB7001146FE /* OnboardingContainerViewController.swift in Sources */,
