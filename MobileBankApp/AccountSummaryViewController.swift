@@ -34,7 +34,7 @@ extension AccountSummaryViewController {
     }
     
     private func setupTableView() {
-        
+        tableView.backgroundColor = appColor
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -93,13 +93,19 @@ extension AccountSummaryViewController {
     }
     
     private func fetchAccounts() {
-        let savings = AccountSummaryCell.ViewModel(accountType: .Banking, accountName: "Basic Savings", balance: 2543983.34)
-        let visa = AccountSummaryCell.ViewModel(accountType: .CreditCard, accountName: "Visa Credit Card", balance: 19243.42)
-        let investment1 = AccountSummaryCell.ViewModel(accountType: .Investment, accountName: "Tax-Free Saver", balance: 2123.12)
-        
+        let savings = AccountSummaryCell.ViewModel(accountType: .Banking, accountName: "Basic Savings", balance: 929466.23)
+        let chequing = AccountSummaryCell.ViewModel(accountType: .Banking, accountName: "No-Fee All-In Chequing", balance: 17562.44)
+        let visa = AccountSummaryCell.ViewModel(accountType: .CreditCard, accountName: "Visa Avion Card", balance: 412.83)
+        let masterCard = AccountSummaryCell.ViewModel(accountType: .CreditCard, accountName: "Student Mastercard", balance: 50.83)
+        let investment1 = AccountSummaryCell.ViewModel(accountType: .Investment, accountName: "Tax-Free Saver", balance: 2000.00)
+        let investment2 = AccountSummaryCell.ViewModel(accountType: .Investment, accountName: "Growth Fund", balance: 15000.00)
+
         accounts.append(savings)
+        accounts.append(chequing)
         accounts.append(visa)
+        accounts.append(masterCard)
         accounts.append(investment1)
+        accounts.append(investment2)
     }
     
     private func fetchProfile() {
