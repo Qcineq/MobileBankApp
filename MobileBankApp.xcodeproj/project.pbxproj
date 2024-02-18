@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E039CDE2B819079008BA768 /* CurrencyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E039CDD2B819079008BA768 /* CurrencyFormatterTests.swift */; };
 		5E242A4E2B80B6D300986318 /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E242A4D2B80B6D300986318 /* AccountSummaryCell.swift */; };
 		5E315B032B7CB32C00AD82F9 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E315B022B7CB32C00AD82F9 /* UIViewController+Utils.swift */; };
 		5E315B052B7CB44C00AD82F9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E315B042B7CB44C00AD82F9 /* MainViewController.swift */; };
@@ -15,7 +16,6 @@
 		5E315B0C2B7EC3A400AD82F9 /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E315B0B2B7EC3A400AD82F9 /* AccountSummaryHeaderView.xib */; };
 		5E57C3022B80D60200E1E6E0 /* DecimalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E57C3012B80D60200E1E6E0 /* DecimalUtils.swift */; };
 		5E57C3042B80D63900E1E6E0 /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E57C3032B80D63900E1E6E0 /* CurrencyFormatter.swift */; };
-		5E57C30C2B81863A00E1E6E0 /* MobileBankAppUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E57C30B2B81863A00E1E6E0 /* MobileBankAppUnitTests.swift */; };
 		5E8874352B725EB7001146FE /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8874342B725EB7001146FE /* OnboardingContainerViewController.swift */; };
 		5E8874372B726AF0001146FE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8874362B726AF0001146FE /* OnboardingViewController.swift */; };
 		5E8874392B743982001146FE /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8874382B743982001146FE /* DummyViewController.swift */; };
@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E039CDD2B819079008BA768 /* CurrencyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatterTests.swift; sourceTree = "<group>"; };
 		5E242A4D2B80B6D300986318 /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
 		5E315B022B7CB32C00AD82F9 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		5E315B042B7CB44C00AD82F9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -47,7 +48,6 @@
 		5E57C3012B80D60200E1E6E0 /* DecimalUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalUtils.swift; sourceTree = "<group>"; };
 		5E57C3032B80D63900E1E6E0 /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
 		5E57C3092B81863A00E1E6E0 /* MobileBankAppUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileBankAppUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E57C30B2B81863A00E1E6E0 /* MobileBankAppUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileBankAppUnitTests.swift; sourceTree = "<group>"; };
 		5E8874342B725EB7001146FE /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		5E8874362B726AF0001146FE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		5E8874382B743982001146FE /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 		5E57C30A2B81863A00E1E6E0 /* MobileBankAppUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				5E57C30B2B81863A00E1E6E0 /* MobileBankAppUnitTests.swift */,
+				5E039CDD2B819079008BA768 /* CurrencyFormatterTests.swift */,
 			);
 			path = MobileBankAppUnitTests;
 			sourceTree = "<group>";
@@ -236,6 +236,7 @@
 				TargetAttributes = {
 					5E57C3082B81863A00E1E6E0 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 						TestTargetID = 5EE3E0242B62FE9A003F8DB0;
 					};
 					5EE3E0242B62FE9A003F8DB0 = {
@@ -287,7 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E57C30C2B81863A00E1E6E0 /* MobileBankAppUnitTests.swift in Sources */,
+				5E039CDE2B819079008BA768 /* CurrencyFormatterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5H4L2XMW7V;
@@ -346,6 +348,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuba.MobileBankAppUnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileBankApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MobileBankApp";
@@ -356,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5H4L2XMW7V;
