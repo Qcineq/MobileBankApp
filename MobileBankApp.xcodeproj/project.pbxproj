@@ -79,31 +79,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5E242A4B2B80B66F00986318 /* Header */ = {
+		5E24EA4F2B833AF30098F21E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5EE3E03E2B6303E1003F8DB0 /* LoginView.swift */,
+				5EE3E02C2B62FE9A003F8DB0 /* LoginViewController.swift */,
+				5E8874382B743982001146FE /* DummyViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5E24EA502B833B360098F21E /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				5E8874342B725EB7001146FE /* OnboardingContainerViewController.swift */,
+				5E8874362B726AF0001146FE /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		5E24EA512B833B5A0098F21E /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				5E315B072B7EC0F200AD82F9 /* AccountSummaryViewController.swift */,
+				5E24EA532B833BC40098F21E /* Header */,
+				5E24EA542B833BE70098F21E /* Cells */,
+			);
+			path = AccountSummary;
+			sourceTree = "<group>";
+		};
+		5E24EA532B833BC40098F21E /* Header */ = {
 			isa = PBXGroup;
 			children = (
 				5E315B092B7EC37400AD82F9 /* AccountSummaryHeaderView.swift */,
 				5E315B0B2B7EC3A400AD82F9 /* AccountSummaryHeaderView.xib */,
 			);
-			name = Header;
+			path = Header;
 			sourceTree = "<group>";
 		};
-		5E242A4C2B80B69A00986318 /* Cells */ = {
+		5E24EA542B833BE70098F21E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				5E242A4D2B80B6D300986318 /* AccountSummaryCell.swift */,
 			);
-			name = Cells;
+			path = Cells;
 			sourceTree = "<group>";
 		};
-		5E315B062B7EC0C000AD82F9 /* AccountSummary */ = {
+		5E24EA552B833C020098F21E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				5E315B072B7EC0F200AD82F9 /* AccountSummaryViewController.swift */,
-				5E242A4B2B80B66F00986318 /* Header */,
-				5E242A4C2B80B69A00986318 /* Cells */,
+				5E88743B2B743F59001146FE /* LocalState.swift */,
+				5E315B022B7CB32C00AD82F9 /* UIViewController+Utils.swift */,
+				5E57C3012B80D60200E1E6E0 /* DecimalUtils.swift */,
+				5E57C3032B80D63900E1E6E0 /* CurrencyFormatter.swift */,
 			);
-			name = AccountSummary;
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5E24EA562B833C1F0098F21E /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				5EE3E0312B62FE9B003F8DB0 /* Assets.xcassets */,
+				5EE3E0332B62FE9B003F8DB0 /* LaunchScreen.storyboard */,
+			);
+			path = Files;
 			sourceTree = "<group>";
 		};
 		5E57C30A2B81863A00E1E6E0 /* MobileBankAppUnitTests */ = {
@@ -112,26 +151,6 @@
 				5E039CDD2B819079008BA768 /* CurrencyFormatterTests.swift */,
 			);
 			path = MobileBankAppUnitTests;
-			sourceTree = "<group>";
-		};
-		5E8874332B725E5E001146FE /* Onboarding */ = {
-			isa = PBXGroup;
-			children = (
-				5E8874342B725EB7001146FE /* OnboardingContainerViewController.swift */,
-				5E8874362B726AF0001146FE /* OnboardingViewController.swift */,
-			);
-			name = Onboarding;
-			sourceTree = "<group>";
-		};
-		5E88743A2B743F43001146FE /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				5E88743B2B743F59001146FE /* LocalState.swift */,
-				5E315B022B7CB32C00AD82F9 /* UIViewController+Utils.swift */,
-				5E57C3012B80D60200E1E6E0 /* DecimalUtils.swift */,
-				5E57C3032B80D63900E1E6E0 /* CurrencyFormatter.swift */,
-			);
-			name = Utils;
 			sourceTree = "<group>";
 		};
 		5EE3E01C2B62FE9A003F8DB0 = {
@@ -157,33 +176,14 @@
 			children = (
 				5EE3E0282B62FE9A003F8DB0 /* AppDelegate.swift */,
 				5E315B042B7CB44C00AD82F9 /* MainViewController.swift */,
-				5EE3E03D2B6303B5003F8DB0 /* Login */,
-				5E8874332B725E5E001146FE /* Onboarding */,
-				5E315B062B7EC0C000AD82F9 /* AccountSummary */,
-				5E88743A2B743F43001146FE /* Utils */,
-				5EE3E03C2B63036A003F8DB0 /* Files */,
-			);
-			path = MobileBankApp;
-			sourceTree = "<group>";
-		};
-		5EE3E03C2B63036A003F8DB0 /* Files */ = {
-			isa = PBXGroup;
-			children = (
-				5EE3E0312B62FE9B003F8DB0 /* Assets.xcassets */,
-				5EE3E0332B62FE9B003F8DB0 /* LaunchScreen.storyboard */,
+				5E24EA4F2B833AF30098F21E /* Login */,
+				5E24EA502B833B360098F21E /* Onboarding */,
+				5E24EA512B833B5A0098F21E /* AccountSummary */,
+				5E24EA552B833C020098F21E /* Utils */,
+				5E24EA562B833C1F0098F21E /* Files */,
 				5EE3E0362B62FE9B003F8DB0 /* Info.plist */,
 			);
-			name = Files;
-			sourceTree = "<group>";
-		};
-		5EE3E03D2B6303B5003F8DB0 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				5EE3E03E2B6303E1003F8DB0 /* LoginView.swift */,
-				5EE3E02C2B62FE9A003F8DB0 /* LoginViewController.swift */,
-				5E8874382B743982001146FE /* DummyViewController.swift */,
-			);
-			name = Login;
+			path = MobileBankApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
