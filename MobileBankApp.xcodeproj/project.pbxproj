@@ -30,6 +30,8 @@
 		5EE3E03F2B6303E1003F8DB0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3E03E2B6303E1003F8DB0 /* LoginView.swift */; };
 		5EF731AD2B894C1B008172D7 /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF731AC2B894C1B008172D7 /* Date+Utils.swift */; };
 		5EF731AF2B894D79008172D7 /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF731AE2B894D79008172D7 /* AccountSummaryViewController+Networking.swift */; };
+		5EF731B32B8955CE008172D7 /* ProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF731B22B8955CE008172D7 /* ProfileTests.swift */; };
+		5EF731B52B895654008172D7 /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF731B42B895654008172D7 /* AccountTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		5EE3E03E2B6303E1003F8DB0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		5EF731AC2B894C1B008172D7 /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
 		5EF731AE2B894D79008172D7 /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
+		5EF731B22B8955CE008172D7 /* ProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTests.swift; sourceTree = "<group>"; };
+		5EF731B42B895654008172D7 /* AccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,7 +174,8 @@
 		5E57C30A2B81863A00E1E6E0 /* MobileBankAppUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				5E039CDD2B819079008BA768 /* CurrencyFormatterTests.swift */,
+				5EF731B12B8955A9008172D7 /* AccountSummary */,
+				5EF731B02B895595008172D7 /* Utils */,
 			);
 			path = MobileBankAppUnitTests;
 			sourceTree = "<group>";
@@ -207,6 +212,23 @@
 				5EE3E0362B62FE9B003F8DB0 /* Info.plist */,
 			);
 			path = MobileBankApp;
+			sourceTree = "<group>";
+		};
+		5EF731B02B895595008172D7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5E039CDD2B819079008BA768 /* CurrencyFormatterTests.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5EF731B12B8955A9008172D7 /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				5EF731B22B8955CE008172D7 /* ProfileTests.swift */,
+				5EF731B42B895654008172D7 /* AccountTests.swift */,
+			);
+			path = AccountSummary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +334,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E039CDE2B819079008BA768 /* CurrencyFormatterTests.swift in Sources */,
+				5EF731B52B895654008172D7 /* AccountTests.swift in Sources */,
+				5EF731B32B8955CE008172D7 /* ProfileTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
