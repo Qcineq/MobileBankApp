@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5E039CDE2B819079008BA768 /* CurrencyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E039CDD2B819079008BA768 /* CurrencyFormatterTests.swift */; };
 		5E242A4E2B80B6D300986318 /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E242A4D2B80B6D300986318 /* AccountSummaryCell.swift */; };
+		5E29CA6F2B87AD4200443E47 /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E29CA6E2B87AD4200443E47 /* ShakeyBellView.swift */; };
 		5E315B032B7CB32C00AD82F9 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E315B022B7CB32C00AD82F9 /* UIViewController+Utils.swift */; };
 		5E315B052B7CB44C00AD82F9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E315B042B7CB44C00AD82F9 /* MainViewController.swift */; };
 		5E315B082B7EC0F200AD82F9 /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E315B072B7EC0F200AD82F9 /* AccountSummaryViewController.swift */; };
@@ -27,6 +28,8 @@
 		5EE3E0322B62FE9B003F8DB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE3E0312B62FE9B003F8DB0 /* Assets.xcassets */; };
 		5EE3E0352B62FE9B003F8DB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EE3E0332B62FE9B003F8DB0 /* LaunchScreen.storyboard */; };
 		5EE3E03F2B6303E1003F8DB0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3E03E2B6303E1003F8DB0 /* LoginView.swift */; };
+		5EF731AD2B894C1B008172D7 /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF731AC2B894C1B008172D7 /* Date+Utils.swift */; };
+		5EF731AF2B894D79008172D7 /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF731AE2B894D79008172D7 /* AccountSummaryViewController+Networking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,7 @@
 /* Begin PBXFileReference section */
 		5E039CDD2B819079008BA768 /* CurrencyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatterTests.swift; sourceTree = "<group>"; };
 		5E242A4D2B80B6D300986318 /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
+		5E29CA6E2B87AD4200443E47 /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
 		5E315B022B7CB32C00AD82F9 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		5E315B042B7CB44C00AD82F9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5E315B072B7EC0F200AD82F9 /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 		5EE3E0342B62FE9B003F8DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EE3E0362B62FE9B003F8DB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EE3E03E2B6303E1003F8DB0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		5EF731AC2B894C1B008172D7 /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
+		5EF731AE2B894D79008172D7 /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				5E315B072B7EC0F200AD82F9 /* AccountSummaryViewController.swift */,
+				5EF731AE2B894D79008172D7 /* AccountSummaryViewController+Networking.swift */,
 				5E24EA532B833BC40098F21E /* Header */,
 				5E24EA542B833BE70098F21E /* Cells */,
 			);
@@ -135,6 +142,7 @@
 				5E315B022B7CB32C00AD82F9 /* UIViewController+Utils.swift */,
 				5E57C3012B80D60200E1E6E0 /* Decimal+Utils.swift */,
 				5EC918BC2B83F29F0023531E /* UITextField+SecureToggle.swift */,
+				5EF731AC2B894C1B008172D7 /* Date+Utils.swift */,
 				5E88743B2B743F59001146FE /* LocalState.swift */,
 				5E57C3032B80D63900E1E6E0 /* CurrencyFormatter.swift */,
 				5EC918BA2B83F0E10023531E /* NSNotificationName.swift */,
@@ -149,6 +157,14 @@
 				5EE3E0332B62FE9B003F8DB0 /* LaunchScreen.storyboard */,
 			);
 			path = Files;
+			sourceTree = "<group>";
+		};
+		5E29CA6D2B87AD1200443E47 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5E29CA6E2B87AD4200443E47 /* ShakeyBellView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		5E57C30A2B81863A00E1E6E0 /* MobileBankAppUnitTests */ = {
@@ -186,6 +202,7 @@
 				5E24EA502B833B360098F21E /* Onboarding */,
 				5E24EA512B833B5A0098F21E /* AccountSummary */,
 				5E24EA552B833C020098F21E /* Utils */,
+				5E29CA6D2B87AD1200443E47 /* Components */,
 				5E24EA562B833C1F0098F21E /* Files */,
 				5EE3E0362B62FE9B003F8DB0 /* Info.plist */,
 			);
@@ -303,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E315B032B7CB32C00AD82F9 /* UIViewController+Utils.swift in Sources */,
+				5EF731AD2B894C1B008172D7 /* Date+Utils.swift in Sources */,
 				5EE3E03F2B6303E1003F8DB0 /* LoginView.swift in Sources */,
 				5E88743C2B743F59001146FE /* LocalState.swift in Sources */,
 				5E315B0A2B7EC37400AD82F9 /* AccountSummaryHeaderView.swift in Sources */,
@@ -312,12 +330,14 @@
 				5E57C3022B80D60200E1E6E0 /* Decimal+Utils.swift in Sources */,
 				5EC918BB2B83F0E10023531E /* NSNotificationName.swift in Sources */,
 				5EE3E02D2B62FE9A003F8DB0 /* LoginViewController.swift in Sources */,
+				5E29CA6F2B87AD4200443E47 /* ShakeyBellView.swift in Sources */,
 				5E242A4E2B80B6D300986318 /* AccountSummaryCell.swift in Sources */,
 				5E8874372B726AF0001146FE /* OnboardingViewController.swift in Sources */,
 				5E315B052B7CB44C00AD82F9 /* MainViewController.swift in Sources */,
 				5E315B082B7EC0F200AD82F9 /* AccountSummaryViewController.swift in Sources */,
 				5E8874352B725EB7001146FE /* OnboardingContainerViewController.swift in Sources */,
 				5EE3E0292B62FE9A003F8DB0 /* AppDelegate.swift in Sources */,
+				5EF731AF2B894D79008172D7 /* AccountSummaryViewController+Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

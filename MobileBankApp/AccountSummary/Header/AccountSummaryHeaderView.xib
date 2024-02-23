@@ -11,6 +11,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountSummaryHeaderView" customModule="MobileBankApp" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="KuJ-Ne-lGp"/>
+                <outlet property="dateLabel" destination="C9w-43-WBo" id="dYK-hl-DK9"/>
+                <outlet property="nameLabel" destination="2Ye-pL-2u4" id="vVe-wW-BRM"/>
+                <outlet property="welcomeLabel" destination="9dn-Te-xSh" id="F2T-Wv-2tH"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
