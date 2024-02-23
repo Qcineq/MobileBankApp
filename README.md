@@ -1,21 +1,26 @@
-# MobileBankApp (work in progress)
+# MobileBankApp
 
-A Swift-based mobile application developed using UIKit. This application is designed to provide a seamless banking experience on iOS devices. Here's an overview of its key features:
+Welcome to MobileBankApp! This is a mobile banking application developed in Swift using UIKit. The app is designed to provide a seamless banking experience on your iOS device, featuring various functionalities including networking and animations.
 
-## Features:
+## Features
 
-1. **Swift & UIKit:**
-   - The entire application is written in Swift, leveraging the power of UIKit for a native and intuitive user experience.
+- **Login Screen:** Securely log in to your account with ease.
+- **Pull to Refresh:** Keep your account information up-to-date by simply pulling down to refresh.
+- **Skeleton Loaders:** Enjoy smooth loading animations while waiting for content to load.
 
-2. **Autolayout:**
-   - Utilizes Autolayout to ensure a responsive and adaptive layout across various iOS devices, offering a consistent user interface.
+## Technologies Used
 
-3. **Networking:**
-   - Implements networking capabilities to interact with backend services.
+- **Swift:** The primary programming language used for development.
+- **UIKit:** Foundation for building user interfaces.
+- **Networking:** Connect with servers to fetch and update banking information.
+- **Animations:** Enhance user experience with fluid animations.
+- **Unit Testing:** Ensure reliability and stability through comprehensive unit tests.
+- **Autolayout:** Utilized for creating adaptive and responsive layouts across various iOS devices.
 
-4. **Unit Testing:**
-   - Incorporates unit tests to ensure the reliability and correctness of the application logic. This helps maintain the stability of the codebase.
+## Installation
 
-5. **Animations:**
-   - Enhances the user experience through the integration of animations, making interactions more engaging and visually appealing.
+To run this application locally, ensure you have Xcode installed on your system.
 
+1. **Clone Repository:** Clone this repository to your local machine.
+2. **Open in Xcode:** Open the project in Xcode IDE.
+3. **Build and Run:** Build and run the application on a simulator or a connected iOS device.
