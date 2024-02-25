@@ -16,7 +16,7 @@ extension Date {
     
     var dayMonthYearString: String {
         let dateFormatter = Date.bankAppDateFormatter
-        dateFormatter.dateFormat = "dd.MM.yy"
+        dateFormatter.dateFormat = "dd MMM yyyy"
         return dateFormatter.string(from: self)
     }
 }

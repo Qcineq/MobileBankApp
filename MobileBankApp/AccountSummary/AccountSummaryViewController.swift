@@ -22,6 +22,9 @@ class AccountSummaryViewController: UIViewController {
     var headerView = AccountSummaryHeaderView(frame: .zero)
     let refreshControl = UIRefreshControl()
     
+    // Networking
+    var profileManager: ProfileManageable = ProfileManager()
+    
     var isLoaded = false
     
     lazy var logoutBarButtonItem: UIBarButtonItem = {
@@ -124,8 +127,11 @@ extension AccountSummaryViewController {
     private func fetchData() {
         let group = DispatchGroup()
         
+        // Testing - random number selection
+        let userId = String(Int.random(in: 1..<4))
+        
         group.enter()
-        fetchProfile(forUserId: "2") { result in
+        profileManager.fetchProfile(forUserId: userId) { result in
             switch result {
             case .success(let profile):
                 self.profile = profile
@@ -136,7 +142,7 @@ extension AccountSummaryViewController {
         }
         
         group.enter()
-        fetchAccounts(forUserId: "2") { result in
+        fetchAccounts(forUserId: userId) { result in
             switch result {
             case . success(let accounts):
                 self.accounts = accounts
@@ -170,8 +176,13 @@ extension AccountSummaryViewController {
             AccountSummaryCell.ViewModel(accountType: $0.type, accountName: $0.name, balance: $0.amount)
         }
     }
-    
+        
     private func displayError(_ error: NetworkError) {
+        let titleAndMessage = titleAndMessage(for: error)
+        self.showErrorAlert(title: titleAndMessage.0, message: titleAndMessage.1)
+    }
+    
+    private func titleAndMessage(for error: NetworkError) -> (String, String) {
         let title: String
         let message: String
         switch error {
@@ -182,7 +193,7 @@ extension AccountSummaryViewController {
             title = "Decoding Error"
             message = "We could not process your request. Please try again."
         }
-        self.showErrorAlert(title: title, message: message)
+        return (title, message)
     }
     
     private func showErrorAlert(title: String, message: String) {
@@ -213,5 +224,12 @@ extension AccountSummaryViewController {
         profile = nil
         accounts = []
         isLoaded = false
+    }
+}
+
+//MARK: - Unit testing
+extension AccountSummaryViewController {
+    func titleAndMessageForTesting(for error: NetworkError) -> (String, String) {
+        return titleAndMessage(for: error)
     }
 }
