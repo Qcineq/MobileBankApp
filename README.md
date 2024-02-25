@@ -24,3 +24,8 @@ To run this application locally, ensure you have Xcode installed on your system.
 1. **Clone Repository:** Clone this repository to your local machine.
 2. **Open in Xcode:** Open the project in Xcode IDE.
 3. **Build and Run:** Build and run the application on a simulator or a connected iOS device.
+
+## Screenshots
+
+![App]()
+*Screenshot: Login screen, Account summary screen, Skeleton Loaders, server error alert.*
