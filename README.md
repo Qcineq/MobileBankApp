@@ -27,5 +27,5 @@ To run this application locally, ensure you have Xcode installed on your system.
 
 ## Screenshots
 
-![App]()
+![App](MobileBankApp/Files/Assets.xcassets/readmePic.imageset/readmePic.png)
 *Screenshot: Login screen, Account summary screen, Skeleton Loaders, server error alert.*
